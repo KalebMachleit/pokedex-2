@@ -15,25 +15,25 @@ function App() {
 
   async function getImage() {
     try {
-        const response = await axios.get(`http://localhost:3001/get-pokemon-image/${pokemon}`)
-        console.log(response.data)
-        setImg(response.data)
+      const response = await axios.get(`http://localhost:3001/get-pokemon-image/${pokemon}`)
+      // console.log(response.data)
+      setImg(response.data)
 
     } catch (error) {
-        throw new Error(`oopsie daisy ${error}`)
+      throw new Error(`oopsie daisy ${error}`)
     }
-}
+  }
 
-async function getInfo() {
-  try {
+  async function getInfo() {
+    try {
       const response = await axios.get(`http://localhost:3001/get-pokemon-by-name/${pokemon}`)
       console.log(response.data)
       setInfo(response.data)
 
-  } catch (error) {
+    } catch (error) {
       throw new Error(`oopsie daisy ${error}`)
+    }
   }
-}
 
   const choosePokemon = (mon) => {
     setPokemon(mon)

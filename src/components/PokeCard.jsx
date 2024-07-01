@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
 import './PokeCard.css'
-import axios from 'axios'
 
 const PokeCard = (props) => {
     return (

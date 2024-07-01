@@ -8,7 +8,7 @@ export default function SearchBar({choosePokemon, getImage, getInfo}) {
     }
     return (
         <>
-            <input type='text' id='search' onBlur={evt => updatePokemon(evt)}></input>
+            <input type='text' onBlur={evt => updatePokemon(evt)}></input>
             <button onClick={getImage}>Update Image</button>
             <button onClick={getInfo}>Update Info</button>
         </>
